@@ -1,24 +1,15 @@
-package com.example.demo.model;
+package generate;
 
 import java.io.Serializable;
 import java.util.Date;
-
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * get_and_set
  * @author 
  */
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@TableName("get_and_set")
-public class GetAndAdd implements Serializable {
+public class GetAndSet implements Serializable {
     /**
      * 主键ID
      */
