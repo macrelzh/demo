@@ -18,7 +18,7 @@ public class GetAndSetImpl implements GetAndSetService {
 
 
     @Override
-    public Long getAndSet() {
+    public synchronized Long getAndSet() {
         // 获取当前值
         GetAndAdd origin = getAndAddDao.selectById(1);
         System.out.println(origin.toString());
